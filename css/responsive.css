@@ -1,0 +1,49 @@
+/* Responsive layout rules are imported by site.css. */
+@media (max-width: 900px) {
+  .primary-nav { gap: 20px; }
+  .hero-grid { gap: 20px; }
+  .about-layout, .contact-layout { gap: 45px; }
+}
+@media (max-width: 700px) {
+  .container { width: min(100% - 36px, 560px); }
+  .nav-wrap { min-height: 72px; flex-wrap: wrap; }
+  .menu-toggle { display: block; }
+  .primary-nav { display: none; flex: 0 0 100%; align-items: stretch; flex-direction: column; gap: 0; padding: 0 0 16px; }
+  .primary-nav.is-open { display: flex; }
+  .primary-nav a { padding: 11px 4px; }
+  .primary-nav .nav-contact { margin-top: 7px; text-align: center; }
+  .menu-toggle[aria-expanded="true"] span:first-child { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:last-child { transform: translateY(-7px) rotate(-45deg); }
+  .hero-grid { min-height: auto; grid-template-columns: 1fr; padding-block: 75px 55px; }
+  .hero-visual { min-height: 310px; }
+  .hero h1 { font-size: clamp(2.7rem, 12vw, 4rem); }
+  .hero-note { margin-top: 35px; }
+  .hero-bottom { padding-bottom: 20px; }
+  .section-pad { padding-block: 70px; }
+  .intro-grid, .about-layout, .contact-layout { grid-template-columns: 1fr; gap: 35px; }
+  .section-heading { align-items: start; flex-direction: column; gap: 12px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .feature-card { min-height: 220px; }
+  .page-hero { padding: 70px 0 65px; }
+  .about-aside { max-width: 360px; }
+  .portrait-placeholder { min-height: 280px; }
+  .contact-panel { padding: 27px; }
+  .footer-inner { padding-block: 25px; align-items: flex-start; flex-direction: column; gap: 10px; }
+  .footer-inner p { margin: 0; }
+}
+@media (max-width: 480px) {
+  .container { width: calc(100% - 32px); }
+  .hero-grid { padding-top: 60px; }
+  .hero-lead { font-size: 1rem; }
+  .hero-actions { gap: 18px; }
+  .hero-visual { min-height: 275px; }
+  .visual-card { min-height: 220px; }
+  .visual-monogram { font-size: 4.2rem; }
+  .visual-orbit { width: 270px; height: 270px; }
+  .orbit-two { width: 330px; height: 330px; }
+  .tag-one { right: 0; top: 35px; }
+  .tag-two { left: 0; bottom: 20px; }
+  .interest-grid { grid-template-columns: 1fr; }
+  .interest-card { padding: 25px; }
+}
